@@ -1,0 +1,74 @@
+{
+  "name": "wxt-react-starter",
+  "description": "manifest.json description",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "zip:firefox": "wxt zip -b firefox",
+    "test": "vitest --run",
+    "build": "wxt build",
+    "lint": "eslint --fix --ext .ts,tsx --ignore-path .gitignore .",
+    "zip": "wxt zip",
+    "dev:firefox": "wxt -b firefox",
+    "format": "prettier -u -w --ignore-path .gitignore \"*.{ts,tsx,css}\"",
+    "build:firefox": "wxt build -b firefox",
+    "postinstall": "wxt prepare",
+    "compile": "tsc --noEmit",
+    "dev": "wxt"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@hookform/resolvers": "^4.1.3",
+    "@preact/signals-react": "^3.0.1",
+    "bootstrap": "^5.3.3",
+    "marked": "^15.0.7",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "uuid": "^11.1.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/chrome": "^0.0.280",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "@vitest/coverage-v8": "^3.0.8",
+    "@wxt-dev/module-react": "^1.1.2",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vitest": "^3.0.8",
+    "wxt": "^0.19.13"
+  },
+  "eslintConfig": {
+    "ignorePatterns": [
+      "build/",
+      "node_modules/",
+      "dist/",
+      ".output/"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:react-hooks/recommended",
+      "plugin:prettier/recommended"
+    ]
+  }
+}

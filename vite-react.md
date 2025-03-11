@@ -51,6 +51,9 @@ yarn add uuid@latest
 
 # Marked
 yarn add marked@latest
+
+# Remove eslint.config.js
+Remove-Item eslint.config.js
 ```
 
 Change a `package.json` file with the following content:

@@ -81,6 +81,9 @@ yarn add uuid@latest
 # Marked
 yarn add marked@latest
 
+# Remove eslint.config.js
+Remove-Item eslint.config.js
+
 # Changing the package.json file
 
 Write-Host "Changing the package.json file" -ForegroundColor Green

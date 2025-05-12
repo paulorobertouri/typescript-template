@@ -70,6 +70,9 @@ dlldata.c
 *.svclog
 *.scc
 
+# Angular
+.angular/
+
 # Chutzpah Test files
 _Chutzpah*
 
